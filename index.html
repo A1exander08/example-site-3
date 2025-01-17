@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#3 example site</title>
+    <link rel="shortcut icon" href="img/three.png" type="image/x-icon" />
+    <!-- BOOTSTRAP LINK -->
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- PERSONAL CSS LINK -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- PRESENTAZIONE PERSONA-MISSION CON GSAP -->
+    <!-- 1° SECTION -->
+    <style>
+      .img-1 {
+        background-image: url("img/sfondo-1.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+      @media (max-width: 575px) {
+        .img-1 {
+          background-color: white;
+          background-image: none;
+          height: 100vh;
+        }
+      }
+    </style>
+    <div class="img-1">
+      <header>
+        <div>
+          <a
+            href=""
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            class="link-underline link-underline-opacity-0 link-dark custom-margin d-flex"
+            >myself</a
+          >
+        </div>
+        <div>
+          <img
+            src="img/continents-of-earth.png"
+            width="110"
+            class="responsive-logo"
+          />
+        </div>
+        <div>
+          <a
+            href=""
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            class="link-underline link-underline-opacity-0 link-dark custom-margin d-flex"
+            >earth</a
+          >
+        </div>
+      </header>
+      <!-- CONTENT -->
+      <div class="container pt-3 pt-sm-5 mt-3 mt-sm-5">
+        <div
+          class="row pt-4 pt-sm-5 mt-4 mt-sm-5 justify-content-sm-start justify-content-center"
+        >
+          <div class="col-12 d-sm-none mb-3">
+            <img src="img/sfondo-1.jpg" class="img-fluid" />
+          </div>
+          <div class="col-11 col-sm-5 col-lg-6">
+            <div class="text-center lead text-primary first-text">
+              I'm Sophia Rivera, a spirited traveler with an insatiable
+              curiosity for cultures, cuisines, and connections. My journey
+              began in the bustling streets of Barcelona, where I first realized
+              the world was much bigger than my hometown.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow">
+        <i
+          class="bi bi-file-arrow-down text-light d-none d-xl-block arrow-movement"
+          style="font-size: 2.8rem"
+        ></i>
+      </div>
+    </div>
+
+    <!-- 2° SECTION -->
+
+    <style>
+      .img-2 {
+        background-image: url("img/sfondo-2-scuro.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+    </style>
+    <div class="img-2">
+      <div class="container pt-md-5 pt-4">
+        <div class="row pt-md-5 mt-md-5 pt-4 mt-3">
+          <div class="col pt-md-5 mt-md-5 pt-3 mt-3">
+            <div class="h1 text-light text-center p-3 title-second-text">
+              My Mission
+            </div>
+            <div class="lead text-light text-center second-text">
+              is to share my experiences—raw, unfiltered, and honest. Expect
+              tales of triumph, moments of misadventure, and glimpses into the
+              unique magic of each destination. Whether it's tips for solo
+              travel, off-the-beaten-path itineraries, or reflections from the
+              road, I want my journey to inspire yours.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAROUSEL PER ARTICOLI DI VIAGGIO -->
+
+    <div class="slider-container">
+      <div class="panel active" style="background-image: url(img/image-2.jpg)">
+        <h2 class="custom-text">Uda Walawe, Sri Lanka</h2>
+      </div>
+      <div class="panel" style="background-image: url(img/image-3.jpg)">
+        <h2 class="custom-text">Canggu, Indonesia</h2>
+      </div>
+      <div class="panel" style="background-image: url(img/image-4.jpg)">
+        <h2 class="custom-text">Wiang Kum Kam, Thailand</h2>
+      </div>
+      <div class="panel" style="background-image: url(img/image-5.jpg)">
+        <h2 class="custom-text">Vung Tau, Vietnam</h2>
+      </div>
+      <div class="panel" style="background-image: url(img/image-6.jpg)">
+        <h2 class="custom-text">Brooklyn, New York</h2>
+      </div>
+    </div>
+
+    <!-- PROMO YT CHANNEL -->
+    <div class="container py-3">
+      <div
+        class="h1 text-center py-3 youtube-title"
+        style="font-family: Bebas Neue, serif; letter-spacing: 0.2em"
+      >
+        Follow Me on YouTube
+      </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-6 col-md-8 pb-md-3">
+          <img
+            src="img/youtube-youtube.jpg"
+            class="img-fluid rounded float-start youtube-img"
+            alt="..."
+          />
+        </div>
+        <div class="col-lg-5 col-md-10">
+          <div class="lead text-center youtube-text">
+            Through my <u>YouTube channel</u>, I invite you to wander the Earth
+            with me! Together, we'll explore, discover, and learn about the
+            cultures, history, and stories that make each destination unique.
+          </div>
+          <div class="row py-4 text-center">
+            <div class="col">
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="btn btn-danger text-center youtube-text"
+              >
+                <strong>Visit my World!</strong>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SIMPLE FOOTER -->
+    <div class="container-fluid text-center bg-dark pt-2">
+      <div class="row text-center">
+        <div class="col-12">
+          <p class="text-light small">
+            © 2025 Sophia Rivera's World &nbsp | &nbsp
+            <a
+              href=""
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              class="text-light link-underline-light link-underline-opacity-100 link-underline-opacity-100-hover"
+              >Terms and Conditions</a
+            >
+            &nbsp | &nbsp
+            <i class="bi bi-instagram custom-center"></i>&nbsp &nbsp
+            <i class="bi bi-threads custom-center"></i>&nbsp &nbsp
+            <i class="bi bi-facebook custom-center"></i>&nbsp &nbsp
+            <i class="bi bi-twitter-x custom-center"></i>&nbsp &nbsp
+            <i class="bi bi-youtube custom-center"></i>&nbsp &nbsp
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="modal-title fs-5" id="exampleModalLabel">
+              Thanks for Visiting! 🎉
+            </p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Building this page has been a great opportunity for me to practice
+            and grow.💪 <br />
+            <br />If you'd like to collaborate or have an exciting project in
+            mind, feel free to reach out—I'd love to work together! 🚀
+            <br />
+            <br />
+            Visit my website:
+            <a href="http://its-alex.com" target="_blank" class="link-success"
+              >its-alex.com</a
+            >
+            👀
+            <br />
+            Send me an Email: alex.beery08@gmail.com ✉️
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+            >
+              Ok!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- GSAP LINK -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- BOOTSRAP LINK -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- PERSONAL JS LINK -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
